@@ -1,0 +1,63 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #37323e;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.grid {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @supports (display: grid) {
+    .grid {
+      display: grid;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      row-gap: 50px;
+    }
+
+    .span-single {
+      grid-column: span 1;
+    }
+
+    .span-sixth {
+      grid-column: span 2;
+    }
+
+    .span-quarter {
+      grid-column: span 3;
+    }
+
+    .span-third {
+      grid-column: span 4;
+    }
+
+    .span-half {
+      grid-column: span 6;
+    }
+
+    .span-three-quarter {
+      grid-column: span 9;
+    }
+  }
+}

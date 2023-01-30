@@ -1,0 +1,43 @@
+{
+  "name": "reusable-button",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reusable button component for React.js",
+  "scripts": {
+    "dev:build": "node esbuild.dev.config.mjs",
+    "dev:serve": "servor public index.html 3000 --reload --browse",
+    "build": "node esbuild.prod.config.mjs",
+    "lint": "eslint --ext=.jsx,.js,.tsx,.ts  .",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "as": "node esbuild.config.mjs -w"
+  },
+  "keywords": [
+    "reusable button",
+    "button",
+    "react button"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "esbuild": "0.17.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@typescript-eslint/eslint-plugin": "5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
+    "eslint": "8.32.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "happy-dom": "^8.1.5",
+    "onchange": "7.1.0",
+    "prettier": "2.8.3",
+    "servor": "4.0.2",
+    "typescript": "4.9.4",
+    "vitest": "0.27.2"
+  }
+}
